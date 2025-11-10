@@ -11,8 +11,20 @@
 ## Установка
 
 ```bash
-go get github.com/shakirovformal/unu_api
+go get github.com/shakirovformal/unu_api@latest
 ```
+Если же у вас не получается установить с помощью команды, используйте альтернативный метод. Добавьте ссылку на библиотеку в go.mod файл в раздел require
+```bash
+require (
+    github.com/shakirovformal/unu_api v1.0.0
+	github.com/go-telegram/bot v1.17.0
+	github.com/joho/godotenv v1.5.1
+	github.com/redis/go-redis/v9 v9.16.0
+	github.com/stretchr/testify v1.11.1
+	google.golang.org/api v0.253.0
+)
+```
+После чего введи ```go mod tidy``` и зависимость должна подтянуться сама
 
 ## Быстрый старт
 ```golang
